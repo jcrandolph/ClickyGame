@@ -1,0 +1,63 @@
+[
+    {
+        "id":1,
+        "name": "Giants",
+        "image": "../images/giants.png"
+    },
+    {
+        "id":2,
+        "name": "Packers",
+        "image": "./images/packers.png"
+    },
+    {
+        "id":3,
+        "name": "Jets",
+        "image": "images/jets.png"
+    },
+    {
+        "id":4,
+        "name": "Steelers",
+        "image": "images/steelers.png"
+    },
+    {
+        "id":5,
+        "name": "Bears",
+        "image": "images/bears.png"
+    },
+    {
+        "id":6,
+        "name": "Lions",
+        "image": "images/lions.png"
+    },
+    {
+        "id":7,
+        "name": "Bengals",
+        "image": "images/bengals.png"
+    },
+    {
+        "id":8,
+        "name": "Seahawks",
+        "image": "images/seahawkss.png"
+    },
+    {
+        "id":9,
+        "name": "Chiefs",
+        "image": "images/chiefs.jpg"
+    },
+    {
+        "id":10,
+        "name": "Bills",
+        "image": "images/bills.png"
+    },
+    {
+        "id":11,
+        "name": "Raiders",
+        "image": "images/raiders.png"
+    },
+    {
+        "id":12,
+        "name": "Chargers",
+        "image": "images/chargers.png"
+    }
+
+]
