@@ -3,13 +3,15 @@ import "./style.css";
 
 function GameCard(props) {
     return (
-        <div className="card">
+       
+        <div className="card" onClick={() => props.playGame(props.id)} >
             <div className="img-container">
                 <img alt={props.name} src={props.image} />
             </div>
             <div className= "content">
             <strong>{props.name}</strong></div>
-        </div>
+                </div>
+               
     )
 }
 

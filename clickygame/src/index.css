@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.header {
+  padding: 20px;
+  width: 100%;
+  height: 185px;
+  text-align: center;
+  font-size: 4rem;
+  text-decoration: underline overline dotted;
+  color: white;
+  text-shadow: 3px 5px black;
+  margin-bottom: 50px;
+border: black 5px solid}
+  
