@@ -4,25 +4,45 @@ import Wrapper from './Wrapper/Wrapper';
 import Header from "./components/Header/Header";
 import cards from "./cards.json";
 
-//var Shuffle = require("react-shuffle")
+
 
 class App extends Component {
   state = {
-    cards
+    cards,
+    score:0,
+    topScore:0,
+    lastClickId:0
   };
 
+  handleIncrement = () => {
+        this.setState({ score: this.state.score + 1 });
+  };
+
+  handleTopScoreIncrement = () => {
+        this.setState({ topScore: this.state.topScore + 1 });
+  };
+
+  shuffleArray = () => {
+    for (let i = this.state.cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [this.state.cards[i], this.state.cards[j]] = [this.state.cards[j], this.state.cards[i]];
+    }
+    console.log(this.state.friends[0].id);
+    this.setState({ cards });
+    
+  }
  
 
-  playGame = id => {
-    const cards = this.state.cards.filter(card => card.id!== id);
-    this.setState({cards})
-  }
+  
 
 
 render() {
   return (
     <Wrapper>
-      <Header></Header>
+      <Header>
+        score= {this.state.score}
+        topScore= {this.state.topScore}
+      </Header>
       
       {this.state.cards.map(card => (
         <GameCard
