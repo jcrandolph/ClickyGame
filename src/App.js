@@ -39,7 +39,7 @@ class App extends Component {
         let j = Math.floor(Math.random() * (i + 1));
         [cards[i], cards[j]] = [cards[j], cards[i]];
       }
-      if (this.state.score >= this.state.topScore) {
+      if (this.state.score > this.state.topScore) {
         this.setState({ topScore: this.state.score });
         return;
       }

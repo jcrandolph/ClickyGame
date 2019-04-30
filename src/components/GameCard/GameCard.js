@@ -4,7 +4,7 @@ import "./style.css";
 function GameCard(props) {
     return (
 
-        <div onClick={() => props.playGame(props.id)} className='playGame'>
+        <div onClick={() => props.playGame(props.id)} className='card'>
             <div className="img-container">
                 <img alt={props.name} src={props.image}
                  />
